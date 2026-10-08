@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#11110f" />
+  <meta name="description" content="Savora — contemporary dining, seasonal ingredients, unforgettable evenings." />
+  <title>Savora — A Modern Dining Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span>✦</span> Seasonal menu, thoughtfully made <span class="announcement-line"></span> <a href="#menu">Explore the menu <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Savora home"><span class="brand-mark">S</span><span>SAVORA<small>MODERN DINING</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#story">Our story</a><a href="#menu">The menu</a><a href="#experience">Experience</a><a href="#reviews">Reviews</a>
+      <button class="nav-cart" id="openCart" aria-label="Open shopping cart">Cart <span id="cartCount">0</span></button>
+      <a class="button button-small" href="#reservation">Book a table <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A little extraordinary, every day</p>
+        <h1>Good food.<br><em>Great stories.</em></h1>
+        <p class="hero-copy">A modern neighbourhood table for slow evenings, bold flavours, and the people who make every meal matter.</p>
+        <div class="hero-actions"><a class="button" href="#menu">Explore the menu <span>↗</span></a><a class="text-link" href="#story"><span class="play-icon">↓</span> Discover Savora</a></div>
+        <div class="hero-meta"><div><strong>4.9<span>/5</span></strong><small>Guest rating</small></div><div class="meta-divider"></div><div><strong>Seasonal</strong><small>Locally inspired</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image"></div><div class="image-label"><span>01 / SIGNATURE</span><strong>Fire-kissed. Fresh. Unforgettable.</strong></div>
+        <div class="floating-note"><span class="note-star">✳</span><span>Made with care,<br><strong>served with soul.</strong></span></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><span class="scroll-line"></span><span>EST. 2021 · OPEN DAILY</span></div>
+    </section>
+
+    <section class="intro section-pad" id="story">
+      <div class="section-kicker">01 — THE SAVORA STORY</div>
+      <div class="intro-main"><h2>Not just a meal.<br><em>A moment to savour.</em></h2><div class="intro-copy"><p>We believe the best memories begin around a table. Savora brings seasonal ingredients, thoughtful cooking, and genuine hospitality together in a space that feels like your favourite place.</p><a class="underlined-link" href="#experience">A little more about us <span>↗</span></a></div></div>
+      <div class="stats-row"><div><strong>12<span>+</span></strong><small>Years of kitchen craft</small></div><div><strong>30<span>+</span></strong><small>Seasonal creations</small></div><div><strong>4.9<span>★</span></strong><small>Average guest rating</small></div><div class="stats-note">Good ingredients.<br>Good people. Good times.</div></div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading"><div><div class="section-kicker">02 — FROM OUR KITCHEN</div><h2>Made to be <em>shared.</em></h2></div><a class="underlined-link desktop-link" href="#reservation">Plan your visit <span>↗</span></a></div>
+      <div class="menu-toolbar"><p>Fresh ingredients, familiar comforts, unexpected little twists.</p><div class="filters" role="group" aria-label="Filter menu"><button class="filter active" data-filter="all">All dishes</button><button class="filter" data-filter="starters">Starters</button><button class="filter" data-filter="mains">Mains</button><button class="filter" data-filter="desserts">Desserts</button></div></div>
+      <div class="dish-grid" id="dishGrid">
+        <article class="dish-card" data-category="mains" data-id="truffle-pasta" data-name="Wild Mushroom Pasta" data-price="420" data-image="photo-1473093295043-cdd812d0e601">
+          <div class="dish-image"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=85" alt="Fresh pasta with herbs" loading="lazy"><span class="dish-tag">CHEF'S FAVOURITE</span><button class="add-dish" aria-label="Add Wild Mushroom Pasta to cart">+</button></div>
+          <div class="dish-info"><div><h3>Wild Mushroom Pasta</h3><p>Silky parmesan cream, wild mushrooms, herbs</p></div><strong>₹420</strong></div>
+        </article>
+        <article class="dish-card" data-category="starters" data-id="burrata" data-name="Garden Burrata" data-price="360" data-image="photo-1608039829572-78524f79c4c7">
+          <div class="dish-image"><img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=900&q=85" alt="Fresh burrata and tomatoes" loading="lazy"><button class="add-dish" aria-label="Add Garden Burrata to cart">+</button></div>
+          <div class="dish-info"><div><h3>Garden Burrata</h3><p>Heirloom tomato, basil oil, toasted sourdough</p></div><strong>₹360</strong></div>
+        </article>
+        <article class="dish-card" data-category="mains" data-id="charred-chicken" data-name="Charred Herb Chicken" data-price="540" data-image="photo-1532550907401-a500c9a57435">
+          <div class="dish-image"><img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=85" alt="Roasted chicken with vegetables" loading="lazy"><button class="add-dish" aria-label="Add Charred Herb Chicken to cart">+</button></div>
+          <div class="dish-info"><div><h3>Charred Herb Chicken</h3><p>Garden herbs, lemon jus, roasted seasonal veg</p></div><strong>₹540</strong></div>
+        </article>
+        <article class="dish-card" data-category="starters" data-id="crispy-potatoes" data-name="Crispy Truffle Potatoes" data-price="260" data-image="photo-1518013431117-eb1465fa5752">
+          <div class="dish-image"><img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=900&q=85" alt="Crispy golden potatoes" loading="lazy"><button class="add-dish" aria-label="Add Crispy Truffle Potatoes to cart">+</button></div>
+          <div class="dish-info"><div><h3>Crispy Truffle Potatoes</h3><p>Parmesan dust, truffle aioli, fresh chives</p></div><strong>₹260</strong></div>
+        </article>
+        <article class="dish-card" data-category="desserts" data-id="chocolate-tart" data-name="Dark Chocolate Tart" data-price="290" data-image="photo-1578985545062-69928b1d9587">
+          <div class="dish-image"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" alt="Rich chocolate dessert" loading="lazy"><span class="dish-tag">A SWEET FINISH</span><button class="add-dish" aria-label="Add Dark Chocolate Tart to cart">+</button></div>
+          <div class="dish-info"><div><h3>Dark Chocolate Tart</h3><p>70% cocoa, vanilla cream, sea salt</p></div><strong>₹290</strong></div>
+        </article>
+        <article class="dish-card" data-category="desserts" data-id="berry-cheesecake" data-name="Berry Cheesecake" data-price="310" data-image="photo-1533134242443-d4fd215305ad">
+          <div class="dish-image"><img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=85" alt="Cheesecake with berry topping" loading="lazy"><button class="add-dish" aria-label="Add Berry Cheesecake to cart">+</button></div>
+          <div class="dish-info"><div><h3>Berry Cheesecake</h3><p>Whipped cream, seasonal berries, biscuit crumb</p></div><strong>₹310</strong></div>
+        </article>
+      </div>
+      <p class="menu-note">Menu and prices are sample content for this demo. Please confirm ingredients and prices before publishing.</p>
+    </section>
+
+    <section class="quote-band" id="experience"><div class="quote-image"></div><div class="quote-content"><span class="quote-mark">“</span><h2>Come as you are.<br><em>Leave a little happier.</em></h2><p>Whether it's a date night, a family gathering, or just Tuesday — there's always a seat for you.</p><a class="button button-light" href="#reservation">Make it an evening <span>↗</span></a><div class="quote-signature">The Savora team <span>✳</span></div></div></section>
+
+    <section class="reviews-section section-pad" id="reviews"><div class="section-heading"><div><div class="section-kicker">03 — KIND WORDS</div><h2>Don't just take <em>our word.</em></h2></div><div class="review-arrows"><button id="prevReview" aria-label="Previous review">←</button><button id="nextReview" aria-label="Next review">→</button></div></div>
+      <div class="review-window"><div class="review-track" id="reviewTrack">
+        <article class="review-card"><div class="stars">★★★★★</div><blockquote>“Every dish felt considered, the atmosphere was beautiful, and the service made the whole evening feel special.”</blockquote><div class="review-author"><span class="avatar">AM</span><div><strong>Ananya M.</strong><small>Visited for dinner</small></div></div></article>
+        <article class="review-card"><div class="stars">★★★★★</div><blockquote>“The kind of place you want to keep to yourself — but the food is too good not to share.”</blockquote><div class="review-author"><span class="avatar">RK</span><div><strong>Rohan K.</strong><small>Local guide</small></div></div></article>
+        <article class="review-card"><div class="stars">★★★★★</div><blockquote>“Lovely flavours, thoughtful details, and a genuinely warm welcome. We'll absolutely be back.”</blockquote><div class="review-author"><span class="avatar">SP</span><div><strong>Simran P.</strong><small>Weekend visitor</small></div></div></article>
+      </div></div>
+    </section>
+
+    <section class="reservation-section section-pad" id="reservation"><div class="reservation-copy"><div class="section-kicker">04 — YOUR TABLE AWAITS</div><h2>Let's make<br><em>an evening of it.</em></h2><p>Good food is even better with good company. Tell us when you're coming and we'll take care of the rest.</p><div class="contact-detail"><span>✳</span><div><small>FIND US</small><strong>12 Garden Lane, Your City</strong></div></div><div class="contact-detail"><span>↗</span><div><small>GIVE US A CALL</small><strong>+91 98765 43210</strong></div></div></div>
+      <form class="reservation-form" id="reservationForm">
+        <div class="form-heading"><h3>Reserve a table</h3><span>✳</span></div>
+        <div class="form-row"><label>Your name<input name="name" type="text" placeholder="Full name" required minlength="2"></label><label>Email address<input name="email" type="email" placeholder="you@example.com" required></label></div>
+        <div class="form-row"><label>Date<input name="date" id="bookingDate" type="date" required></label><label>Time<select name="time" required><option value="">Choose a time</option><option>12:00 PM</option><option>1:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option></select></label></div>
+        <label>Number of guests<select name="guests" required><option value="2">2 guests</option><option value="1">1 guest</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option></select></label>
+        <label>Anything we should know? <span class="optional">(optional)</span><textarea name="notes" rows="3" placeholder="Special occasion, dietary requests..."></textarea></label>
+        <button class="button form-submit" type="submit">Request a reservation <span>↗</span></button>
+        <p class="form-disclaimer">Demo form: requests are shown on this device only and are not sent to a restaurant.</p>
+        <p class="form-message" id="reservationMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="brand" href="#top"><span class="brand-mark">S</span><span>SAVORA<small>MODERN DINING</small></span></a><p>Good food. Great stories.<br>Always room for one more.</p><a class="back-top" href="#top">Back to top ↑</a></div><div class="footer-bottom"><span>© <span id="year"></span> Savora Restaurant. Demo project.</span><div><a href="#menu">Menu</a><a href="#reservation">Reservations</a><a href="mailto:hello@example.com">Email us</a></div><span>Made with care <span class="gold">✳</span></span></div></footer>
+
+  <div class="cart-overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head"><div><span class="section-kicker">YOUR ORDER</span><h2>Your basket <span id="drawerCount">(0)</span></h2></div><button id="closeCart" class="close-cart" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart"><span>✳</span><h3>Your table is waiting.</h3><p>Add something delicious to get started.</p></div></div>
+    <div class="cart-footer"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><p>Taxes and delivery, if applicable, are not included.</p><button class="button form-submit" id="checkoutButton">Continue to order <span>↗</span></button><p class="cart-feedback" id="cartFeedback" role="status"></p></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
